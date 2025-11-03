@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 3px solid black;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.navList {
+  display: flex;
+  gap: 16px;
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.logo {
+  height: 32px;
+  width: 32px;
+  background-color: white;
+}
+
+/* MAIN */
+.section {
+  min-height: 100vh;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid black;
+  padding: 16px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  color: black;
+}
