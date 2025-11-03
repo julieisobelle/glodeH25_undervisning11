@@ -1,23 +1,61 @@
 body {
   margin: 0;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sectionHero sectionAbout"
+    "sectionProjects sectionProjects"
+    "footer footer"
+  ;
+}
+
+.header {
+  grid-area: header;
+}
+
+.sectionHero {
+  grid-area: sectionHero;
+}
+
+.sectionAbout {
+  grid-area: sectionAbout;
+}
+
+.sectionProjects {
+  grid-area: sectionProjects;
+}
+
+.footer {
+  grid-area: footer;
 }
 
 /* HEADER */
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 16px;
-  border-bottom: 3px solid black;
-  position: sticky;
-  top: 0;
-  background-color: white;
-}
-
-.navList {
+/*.navList {
   display: flex;
   gap: 16px;
   list-style-type: none;
   padding-inline-start: 0;
+}
+*/
+
+.navList {
+  list-style-type: none;
+  padding-inline-start: 0;
+  display: grid;
+  grid-template-areas: "home about projects";
+  gap: 16px;
+}
+
+.home {
+  grid-area: home;
+}
+
+.about {
+  grid-area: about;
+}
+
+.projects {
+  grid-area: projects;
 }
 
 .logo {
@@ -33,10 +71,10 @@ header {
 
 /* FOOTER */
 .footer {
-  display: flex;
+  /*display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center;*/
   border-bottom: 3px solid black;
   padding: 16px;
 }
